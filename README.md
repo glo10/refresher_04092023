@@ -10,6 +10,22 @@
 
 ---
 
+## Icones et images
+
+- [Unsplash](https://unsplash.com/)
+- [Icônes](https://icones.js.org/)
+- [Faviconer converter](https://favicon.io/favicon-converter/)
+
+---
+
+## Éditeurs en ligne
+
+- [JS Bin](https://jsbin.com/)
+- [CodeSandBox](https://codesandbox.io/)
+- [Code pen](https://codepen.io/pen/)
+
+---
+
 ## Documentation
 
 - [HTML5 W3schools](https://www.w3schools.com/html/)
