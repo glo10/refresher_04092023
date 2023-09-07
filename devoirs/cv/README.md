@@ -55,7 +55,7 @@ La plupart des attributs sont spécifiques à une balise. Par exemple `src` et `
 9. Dans le body, hormis h1, toutes les autres balises  peuvent être utilisées autant de fois que je le souhaite dans mon document HTML.
 10. L'ordre d'écriture de votre code est le même que l'ordre de l'interprétation et d'affichage de votre page par le navigateur Web.
 11. Sans CSS (langage qui permet d'habiller votre page), les navigateurs appliquent un style ("habits et maquillage") par défaut. L'affichage peut être différent d'un navigateur à un autre parce que chaque navigateur applique son propre style pour chaque type balise.
-12. Il y a plusieurs conventions :
+12. Il y a plusieurs conventions de nommage :
 - Les balises doivent être en minuscules
 - Les noms de vos fichiers et dossiers doivent également être en minuscules
 - Il faut éviter les espaces, les accents et les caractères spéciaux ($, @, &, /, ?, etc.) dans les noms de vos fichiers et dossiers.
