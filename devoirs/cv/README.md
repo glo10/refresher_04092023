@@ -17,8 +17,8 @@
 - Des paragraphes
 - Une image
 - Des liens externes vers un ou plusieurs réseaux sociaux, les sites des écoles, etc.
-- Vérifier la validité de votre code HTML sur le site [validator de w3](https://validator.w3.org/#validate_by_input)
 - Des listes numérotées et non numérotées
+- Vérifiez la validité de votre code HTML depuis le site [validator de w3](https://validator.w3.org/#validate_by_input)
 
 ---
 
@@ -32,8 +32,8 @@ Chaque balise a un rôle et un objectif bien précis pour représenter une infor
 - `html:5` : permet de générer la structure de base d'un document html (page web)
 - `<!DOCTYPE html>` : signale au navigateur que le document courant est un fichier html
 - `<html></html>` : début du document html
-- `<head></head>` : premier enfant de la balise `<html>`, on y trouve des métadonnées (informations supplémentaires pour aider le navigateur à bien comprendre notre document) ou des liens vers les fichiers  des autres langages Web, CSS, JavaScript qui seront abordés plus tard. Le contenu présent dans la balise `<head>` n'est généralement pas visible au niveau du navigateur.
-- `<body></body>` : corps de notre document HTML et 2e enfant de la balise `html`. Hormis les commentaires, tout ce qui se trouve entre les balises `<body></body>` sera visible sur un navigateur.
+- `<head></head>` : premier enfant de la balise `<html>`, on y trouve des métadonnées (informations supplémentaires pour aider le navigateur à bien comprendre notre document) ou des liens vers les fichiers  des autres langages Web, CSS, JavaScript qui seront abordés plus tard. Le contenu présent dans la balise `<head>` n'est généralement pas visible au niveau du navigateur sauf pour la balise `<title>`.
+- `<body></body>` : corps du document HTML et 2e enfant de la balise `html`. Hormis les commentaires, tout ce qui se trouve entre les balises `<body></body>` sera visible sur un navigateur.
 
 ![structure](img/structure.png)
 [source image apcpedagogie](https://apcpedagogie.com/wp-content/uploads/2017/03/html-body.png)
@@ -43,18 +43,22 @@ Chaque balise a un rôle et un objectif bien précis pour représenter une infor
 1. La majorité des balises fonctionnent par paire, une balise ouvrante et une balise fermante.
 - Motif d'une balise ouvrante `<nom de la balise>`
 - Motif d'une balise fermante `</nom de la balise>`
-- Certaines balises sont auto-fermantes (ne nécessite pas la présence de la balise fermante) comme la balise `<img>` ou `<meta>`
+- Certaines balises sont auto-fermantes (ne nécessitent pas la présence de la balise fermante) comme la balise `<img>` ou `<meta>`
 2. Document HTML = Page HTML = Page Web
 3. Un site est composé d'un ou de plusieurs pages web.
-4. Le premier fichier lu par le navigateur dans un site web est le fichier `index.html`, c'est comme le bonjour le matin ou la page d'authentification lorsque vous ouvrez votre PC ou MAC.
+4. Le premier fichier lu par le navigateur dans un site web est le fichier `index.html`, c'est comme le bonjour le matin ou la page d'authentification lorsqu'on allume son PC ou MAC.
 5. Il faut respecter l'ordre d'ouverture et de fermeture de vos balises : premier ouvert, dernier fermé
 6. Certaines balises s'accompagnent d'attribut comme la balise `img`. Un attribut est une information complémentaire à la balise.
-La plupart des attributs sont spécifiques à une balise. Par exemple src et alt sont propres à l'image tandis que la balise href est spécifique à la balise a. Un attribut s'accompagne forcément d'une valeur qu'on renseigne entre les guillemets.
-7. Les attributs et leurs valeurs respectives doivent toujours être à l'intérieur de la balise ouvrante (avant le crochet `>`)
-8. Une page web ou html = un seul thème, ce qui explique que vous pouvez avoir qu'un seul `h1` (grand titre) par page.
-9. Dans le body, hormis h1, toutes les autres balises, je peux les utiliser autant de fois que je le souhaite dans mon document html.
-10. L'ordre d'écriture de votre code est le même que l'ordre de l'interprétation et d'affichage par le navigateur de votre code.
-11. Sans CSS (langage qui permet d'habiller votre page), les navigateurs appliquent un style ("habits et maquillage") par défaut. L'affichage peut être différent d'un navigateur à un autre parce que chaque navigateur applique son propre style pour chaque type (même) de balise.
+La plupart des attributs sont spécifiques à une balise. Par exemple `src` et `alt` sont propres à l'image tandis que la balise `href` est spécifique à la balise `a`. Un attribut s'accompagne forcément d'une valeur qu'on renseigne entre les guillemets.
+7. Les attributs et leurs valeurs respectives doivent toujours être à l'intérieur de la balise ouvrante (avant le crochet `>` de la balise ouvrante). S'il y a plusieurs attributs, il faut bien les séparer par un espace.
+8. Une page web ou HTML = un seul thème, ce qui explique que vous pouvez avoir qu'un seul titre `h1` (grand titre) par page.
+9. Dans le body, hormis h1, toutes les autres balises  peuvent être utilisées autant de fois que je le souhaite dans mon document HTML.
+10. L'ordre d'écriture de votre code est le même que l'ordre de l'interprétation et d'affichage de votre page par le navigateur Web.
+11. Sans CSS (langage qui permet d'habiller votre page), les navigateurs appliquent un style ("habits et maquillage") par défaut. L'affichage peut être différent d'un navigateur à un autre parce que chaque navigateur applique son propre style pour chaque type balise.
+12. Il y a plusieurs conventions :
+- Les balises doivent être en minuscules
+- Les noms de vos fichiers et dossiers doivent également être en minuscules
+- Il faut éviter les espaces, les accents et les caractères spéciaux ($, @, &, /, ?, etc.) dans les noms de vos fichiers et dossiers.
 
 ### Dans la balise `<head></head>`
 
@@ -63,7 +67,7 @@ La plupart des attributs sont spécifiques à une balise. Par exemple src et alt
 ### Les titres dans le `<body></body>`
 
 Objectif : hiérarchiser son contenu avec 6 niveaux de titres disponibles selon l'importante du contenu. C'est comme un journal, vous avez des grands titres qu'on doit voir tout de suite et d'autres moins importants.
-- `<h1>Titre Principal</h1>` : Titre de niveau 1, grand titre, un seul titre h1 par document html. C'est l'équivalent du gros titre d'un article de journal
+- `<h1>Titre Principal</h1>` : Titre de niveau 1, grand titre, un seul titre h1 par document HTML. C'est l'équivalent du gros titre d'un article de journal
 - `<h2>Titre de niveau 2</h2>` : Titre de niveau 2, moins important que `h1`, il peut y avoir plusieurs h2 dans un document HTML
 - `<h3>Titre de niveau 3</h3>` : Titre de niveau 3, moins important que `h1` et `h2`, il peut y avoir plusieurs h3 dans un document HTML
 - `<h4>Titre de niveau 4</h4>` : Titre de niveau 4, moins important que `h1`, `h2` et `h3`, il peut y avoir plusieurs h4 dans un document HTML
@@ -79,7 +83,7 @@ Objectif : afficher des images à partir d'une source locale (le fichier est sto
 
 ### Les paragraphes dans le `<body></body>`
 
-Objectif: des paragraphes contenant du texte.
+Objectif: afficher du texte sous forme de paragraphe.
 
 - `<p>` : p pour paragraphe
 
@@ -92,12 +96,12 @@ A l'intérieur des balises `ul` (liste non ordonnée) ou `ol` (liste ordonnée) 
 - `<ol><li>Item</li></ol>`
 - `<ol></ol>` : sans au moins un `li` votre code est faux.
 - `<ul></ul>` : idem.
-- `<ol></ol><li></li>` : Avec un `li` à l'extérieur d'un `ol` `ul` c'est également mauvais.
-- `<ul><p></p><ul>` : à l'intérieur d'un `ul` ou `ol`, vous avoir uniquement comme enfant direct que des `li`, par contre entre une balise ouvrante et fermante `li`, vous pouvez avoir des images, des liens. D'un point de vue sémantique, ça n'a pas de sens de mettre un paragraphe `p` à l'intérieur d'un `li`
+- `<ol></ol><li></li>` : Avec un `li` à l'extérieur d'un `ol` ou `ul` c'est également faux.
+- `<ul><p></p><ul>` : à l'intérieur d'un `ul` ou `ol`, vous devez avoir uniquement un ou plusieurs enfants directs qui sont uniquement des `li`, par contre entre une balise ouvrante et fermante `li`, vous pouvez avoir des images, des liens. D'un point de vue sémantique, ça n'a pas de sens de mettre un paragraphe `p` à l'intérieur d'un `li`
 
 ### Lien hypertexte dans le `<body></body>` avec la balise a
 
-Objectif: créer des liens vers d'autres pages de notre projets ou des pages externes tels que *facebook*, *linkedin*, *amazon* etc.
+Objectif: créer des liens vers d'autres pages de notre projets ou des pages externes tels que *facebook*, *linkedin*, *amazon* etc. D'ailleurs, c'est grâce à ces liens qu'on peut naviguer sur le Web. Lorsque vous êtes sur un site web, vous cliquez sur des liens textuels ou des liens depuis des images pour aller d'une page vers une autre.
 Vous pouvez créer des liens hypertextes sur un texte ou une image.
 La balise a s'accompagne des attributs :
 - `href` : lien vers une page interne ou une page externe au site web
@@ -105,8 +109,8 @@ La balise a s'accompagne des attributs :
 
 Exemples
 
-- `<a href="https://www.linkedin.com/">Lien textuelle vers le site linkedin</a>` : le lien s'ouvrira dans la page courante (à la place de votre site)
-- `<a href="https://www.google.com/" target="_blank">Lien textuelle vers le site google en ouvrant un nouvel onglet</a>` : le lien s'ouvrira dans un nouvel onglet donc l'utilisateur reste sur votre site
+- `<a href="https://www.linkedin.com/">Lien textuel vers le site linkedin</a>` : le lien s'ouvrira dans la page courante (à la place de votre site)
+- `<a href="https://www.google.com/" target="_blank">Lien textuel vers le site google en ouvrant un nouvel onglet</a>` : le lien s'ouvrira dans un nouvel onglet donc l'utilisateur reste sur votre site
 - `<a href="https://www.linkedin.com/" target="_blank"><img src="ma_photo.png></a>` : lien cliquable depuis la photo qui sera affiché, au clique sur celle-ci le navigateur ouvrira un nouvel onglet vers *linkedin*
 
 ---
