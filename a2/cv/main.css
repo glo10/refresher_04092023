@@ -1,0 +1,58 @@
+/* 
+Ceci est un commentaire en CSS
+MAC : CMD + SHIFT + /
+WIN: CTRL + /
+*/
+/* 
+Pour écrire du CSS
+
+1. un sélecteur HTML (nom d'une balise)
+2. Des accolades
+MAC : option + 5
+WIN : ALT GR + 4
+3. Une liste des propriétés et des valeurs (couple)
+4. A la fin de chaque couple, un point virgule (;)
+*/
+
+img {
+    /* Largeur de l'image */
+    width: 250px;
+    /* Hauteur de l'image */
+    height: 250px;
+    /* Image avec des bordures arrondies */
+    border-radius: 50%;
+    /* Pour centrer l'image, il faut une combinaison de 2 propriétés */
+    /* l'image occupe toute la largeur */
+    display: block;
+    /* auto = même espace à gauche, droite, haut, bas => centrer */
+    margin: auto;
+}
+
+body {
+    /* Fond de l'image */
+    background-color:aliceblue;
+    /* La police */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3 {
+    /* Souligner */
+    text-decoration: underline;
+}
+
+h1 {
+    /* taille du texte */
+    font-size: 80px;
+    /* Mettre en italique */
+    font-style: italic;
+    text-align: center;
+}
+
+/* 
+Pour les ID
+Obligatoire de prefixer par un #
+*/
+
+#list-italic li {
+    font-style:italic;
+}
