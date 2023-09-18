@@ -1,0 +1,60 @@
+/*Ceci est un commentaire = code qui ne s'exécute pas */
+
+/*
+*
+Comment écrire du CSS
+1. sélectionner un élément HTML à partir du nom de la balise ou à partir d'un identifiant #NomDeLidentifiant
+2. Entre les accolades, des propriétés avec des valeurs
+3. N'oubliez pas le point virgule pour signaler la fin de l'instruction
+*/
+
+h1 {/* h1 est un sélécteur, sur tous les h1 dans le document HTML, tous les styles ci-dessous vont s'appliquer */
+    /*
+    Des propriétés et des valeurs ici
+    */
+    /** Changement de couleur du texte */
+    color:cadetblue;
+    /** Modifier la taille du texte*/
+    font-size: 50px;/* px pour pixel, unité de base pour les dimensions en informatique, il en existe d'autres qu'on ne verra pas */
+    /** fond*/
+    background-color: beige;
+    /** Centrer le texte*/
+    text-align: center;
+}
+
+body {/* body = sélécteur pour toute la page */
+    background-color:azure;
+}
+
+/* séléctionner un élement à qui on a attribué un identifiant id avec une valeur dans ces attributs HTML*/
+#img-profile {
+    /** modifier hauteur*/
+    height: 150px;
+    /** Modifier la largeur*/
+    width: 150px;
+    /* 
+    bordure avec première valeur taille de la bordure
+    type de bordure (solid = trait plein)
+    couleur de la bordure
+    */
+    border: 4px solid lightgoldenrodyellow;
+    /*
+        combinaison de display: block + margin: auto permet de centrer l'image
+        display: block permet à l'image d'occuper toute la largeur
+        margin: auto, laisse des espaces extérieurs identiques à gauche et à droite de l'image ce qui permet de le center
+    */
+    display: block;
+    margin: auto;
+}
+
+ol, ul {/* sélection de plusieurs, ils sont séparés par des virgules */
+    /* suppression des puces et numéro sur les listes ol et ul*/
+    list-style-type: none;
+}
+
+h2, h3 {
+    /* souligner un texte*/
+    text-decoration: underline;
+    color:coral;
+    font-size: 30px;
+}
