@@ -31,6 +31,7 @@
 - [HTML5 W3schools](https://www.w3schools.com/html/)
 - [Référence des éléments HTML](https://developer.mozilla.org/fr/docs/Web/HTML/Element)
 - [CSS3 W3schools](https://www.w3schools.com/css/default.asp)
+- [Demo tous les sélécteurs](https://www.w3schools.com/cssref/trysel.php)
 
 ---
 
@@ -55,6 +56,12 @@
 - [CSS selectors](https://dev.to/areedev/css-selectors-cheat-sheets-1omk)
 - [CSS](https://groupe-sii.github.io/cheat-sheets/css-selectors/index.html)
 - [Flexbox](https://dev.to/simonpaix/css-flexbox-cheat-sheet-1g09)
+
+---
+
+## Hosting
+
+- [Création de compte avec Webhost](https://fr.000webhost.com/inscription-site-gratuite)
 
 ---
 
