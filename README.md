@@ -2,6 +2,12 @@
 
 ---
 
+## Cours
+
+-  [Hébergement Web](2-cours/2-hebergement/hosting_web.pdf)
+
+---
+
 ## Jeux CSS
 
 - [CSS Diner](https://flukeout.github.io/)
